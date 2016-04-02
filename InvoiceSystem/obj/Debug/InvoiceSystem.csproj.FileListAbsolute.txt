@@ -1,0 +1,15 @@
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.exe.config
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.exe
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.pdb
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.csprojResolveAssemblyReference.cache
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.exe
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.pdb
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\bin\Debug\Newtonsoft.Json.dll
+D:\coding\A5 programmeren 1 Csharp\examen\InvoiceSystem\InvoiceSystem\bin\Debug\Newtonsoft.Json.xml
+D:\coding\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.exe.config
+D:\coding\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.exe
+D:\coding\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.pdb
+D:\coding\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.exe
+D:\coding\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.pdb
+D:\coding\InvoiceSystem\InvoiceSystem\bin\Debug\Newtonsoft.Json.xml
+D:\coding\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.csprojResolveAssemblyReference.cache
