@@ -23,7 +23,6 @@ namespace InvoiceSystem.Models
             {
                 case 1:
                     
-
                     break;
                 case 2:
                     Console.WriteLine("Case 2");
