@@ -2,6 +2,8 @@
 {
     class InvoiceRule
     {
+        public int InvoiceRuleNmbr { get; set; }
+
         public InvoiceRule()
         {
         }
@@ -13,6 +15,5 @@
         }
         public Product Product;
         public int Amount { get; set; }
-        public int InvoiceRuleNmbr { get; set; }
     }
 }

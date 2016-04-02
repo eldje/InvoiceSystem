@@ -46,9 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Init.cs" />
     <Compile Include="Models\Invoice.cs" />
     <Compile Include="Models\InvoiceRule.cs" />
+    <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Repo\InvoiceRepo.cs" />
     <Compile Include="Repo\ProductRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
