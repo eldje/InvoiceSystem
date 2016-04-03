@@ -1,6 +1,5 @@
 ﻿using System;
 using InvoiceSystem.Models;
-using InvoiceSystem.Repo;
 
 namespace InvoiceSystem
 {

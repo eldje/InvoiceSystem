@@ -6,7 +6,5 @@
         {
             InvoiceRule invRule = new InvoiceRule();
         }
-
-
     }
 }
