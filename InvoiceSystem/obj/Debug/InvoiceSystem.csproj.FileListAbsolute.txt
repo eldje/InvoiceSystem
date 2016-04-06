@@ -1,7 +1,0 @@
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.exe.config
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.exe
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\bin\Debug\InvoiceSystem.pdb
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.csprojResolveAssemblyReference.cache
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.exe
-C:\Users\Capta\Documents\GitHub\InvoiceSystem\InvoiceSystem\obj\Debug\InvoiceSystem.pdb
