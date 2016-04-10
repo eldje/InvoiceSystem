@@ -1,10 +1,12 @@
-﻿namespace InvoiceSystem.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace InvoiceSystem.Models
 {
-    class Invoice
+    public class Invoice
     {
-        public void NewInvoiceRule(Product product , int amount)
-        {
-            InvoiceRule invRule = new InvoiceRule();
-        }
+        public int InvoiceNumber { get; private set; }
+        public DateTime Date;
+        public decimal TotalAmount { get; set; }
     }
 }

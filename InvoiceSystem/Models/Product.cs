@@ -5,6 +5,15 @@
     /// </summary>
     public class Product
     {
+        //prop
+        public decimal ProfitPerc { get; set; } = 1.15m;
+        private decimal _sellingPriceExTax;
+        public decimal SellingPriceExTax
+        {
+            get { return _sellingPriceExTax; }
+            set { _sellingPriceExTax = (ProdBuyPrice * ProfitPerc); }
+        }
+
         //ctor
         public Product(string prodId, string prodDesc, decimal prodBuyPrice)
         {
@@ -15,13 +24,5 @@
         public string ProdId { get; set; }
         public string ProdDesc { get; set; }
         public decimal ProdBuyPrice { get; set; }
-        //prop
-        public decimal ProfitPerc { get; set; } = 1.15m;
-        private decimal _sellingPriceExTax;
-        public decimal SellingPriceExTax
-        {
-            get { return _sellingPriceExTax; }
-            set { _sellingPriceExTax = (ProdBuyPrice * ProfitPerc); }
-        }
     }
 }

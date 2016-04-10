@@ -46,10 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DataProvider.cs" />
     <Compile Include="Init.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Invoice.cs" />
     <Compile Include="Models\InvoiceRule.cs" />
-    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Repo\SystemRepo.cs" />
+    <Compile Include="Views\Menu.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Repo\InvoiceRepo.cs" />
     <Compile Include="Repo\ProductRepo.cs" />
@@ -59,6 +64,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

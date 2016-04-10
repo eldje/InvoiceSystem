@@ -1,26 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using InvoiceSystem.Models;
-using Newtonsoft.Json;
-using System.IO;
 
 namespace InvoiceSystem.Repo
 {
     class InvoiceRepo
     {
-        public static string FilePath { get; } = "InvoiceRepo.json";
-        public List<Invoice> Invoices { get; set; } = new List<Invoice>();
+        public void ShowInvoices()
+        {
+            foreach (Invoice invoice in DataProvider.Invoices)
+                Console.WriteLine("{0} \t {1} \t {2} \t \t {3}", invoice.Date,invoice.InvoiceNumber, invoice.TotalAmount, invoice.Client);
+        }
 
-        /// <summary>
-        /// Json part
-        /// methods to read and write _productlist to json
-        /// </summary>
-        public void LoadInvoiceList()
+        public void ShowInvoice(int invoiceNumber)
         {
-            Invoices = JsonConvert.DeserializeObject<List<Invoice>>(File.ReadAllText(FilePath)) ?? new List<Invoice>();
+            var invoice = DataProvider.Invoices.Where(x => x.InvoiceNumber == invoiceNumber);
+            var castedInvoice = (Invoice) invoice;
+            Console.WriteLine("{0} \t {1} \t {2} \t \t {3}", castedInvoice.Date, castedInvoice.InvoiceNumber, castedInvoice.TotalAmount, castedInvoice.Client);
         }
-        public static void SaveInvoiceList(List<Invoice> Invoices)
+
+        // move input to menu.cs
+        public void NewInvoiceRule()
         {
-            File.WriteAllText(FilePath, JsonConvert.SerializeObject(Invoices));
+            InvoiceRule invRule = new InvoiceRule();
+            Console.WriteLine("Enter the productId :");
+            invRule.Product.ProdId = Console.ReadLine();
+            Console.WriteLine("Enter the amount: ");
+            invRule.Amount = Convert.ToInt32(Console.ReadLine());
+
+            InvRules.Add(invRule);
         }
-    }
 }

@@ -7,10 +7,12 @@ namespace InvoiceSystem
     {
         static void Main(string[] args)
         {
-            Init.Run();
+            Init i = new Init();
+            i.Run();
             
-            Menu.OpenMenu();
-
+            Menu m = new Menu();
+            m.StartMenu();
+  
             Console.ReadLine();
         }
     }

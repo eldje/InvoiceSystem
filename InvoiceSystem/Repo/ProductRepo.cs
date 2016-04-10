@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
-using System.IO;
 using InvoiceSystem.Models;
 
 namespace InvoiceSystem.Repo
@@ -13,43 +11,30 @@ namespace InvoiceSystem.Repo
     /// </summary>
     public class ProductRepo
     {
-        public static string FilePath { get; } = "ProductRepo.json";
         public List<Product> Products { get; set; } = new List<Product>();
 
-        public void NewProduct()
+        public void ShowAllProducts()
         {
-            Console.WriteLine("Enter the productId: ");
-            string prodId = Console.ReadLine();
-            Console.WriteLine("Enter the product description: ");
-            string prodDesc = Console.ReadLine();
-            Console.WriteLine("Enter the buy-in price of the product: ");
-            decimal prodBuyPrice = Convert.ToDecimal(Console.ReadLine());
             foreach (Product product in Products)
-            {
-                if (product.ProdId == prodId)
-                {
-                    Console.WriteLine("this key already exist, pick another one: ");
-                    prodId = Console.ReadLine();
-                }
-            }
-            Product prod = new Product(prodId, prodDesc, prodBuyPrice);
-            Products.Add(prod);
-            SaveProductList(Products);
-            Console.WriteLine("The product {0} was added to the productrepo.", prodDesc);
-            Menu.OpenMenu();
+                Console.WriteLine("{0} \t {1} \t \t {2}", product.ProdId , product.ProdBuyPrice, product.ProdDesc);
         }
+    }
 
-        /// <summary>
-        /// Json part
-        /// methods to read and write _productlist to json
-        /// </summary>
-        public void LoadProductList()
+    public void NewProduct(string prodId, string prodDesc, decimal prodBuyPrice)
+    {
+        foreach (Product product in Products)
         {
-            Products = JsonConvert.DeserializeObject<List<Product>>(File.ReadAllText(FilePath)) ?? new List<Product>();
+            if (product.ProdId == prodId)
+            {
+                Console.WriteLine("this key already exist, pick another one: ");
+                prodId = Console.ReadLine();
+            }
         }
-        public static void SaveProductList(List<Product> Products)
-        {
-            File.WriteAllText(FilePath, JsonConvert.SerializeObject(Products));
-        }
+        Product prod = new Product(prodId, prodDesc, prodBuyPrice);
+        Products.Add(prod);
+        SaveProductList(Products);
+        Console.WriteLine("The product {0} was added to the productrepo.", prodDesc);
+        Models.Menu.
+        m.StartMenu();
     }
 }
